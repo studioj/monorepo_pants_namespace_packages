@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "foo.bir"
+version = "0.1.0"
+authors = [{ name = "barco", email = "veit@example.org" }]
+license = "Other/Proprietary License"
+requires-python = ">=3.7"
+description = "Python Namespace Package contains all you need to create a Python namespace package."
+keywords = ["foo.bir"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Private :: Do Not Upload",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+tests = [
+    ]
+docs = [
+    "sphinx",
+    "furo",
+]
+build = [
+    "build",
+    "twine",
+    "pep517"
+]
+dev = [
+    "foo.bir[tests, docs]",
+    "pre-commit",
+    "cruft",
+    "black",
+    "isort",
+]
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
