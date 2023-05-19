@@ -9,7 +9,6 @@ __version__ = "0.1.0"
 __author__ = "barco"
 __email__ = "veit@example.org"
 
-__license__ = "Other/Proprietary License"
 
 __all__ = [
     "__title__",

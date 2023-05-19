@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "foo.bar"
 version = "0.1.0"
 authors = [{ name = "barco", email = "veit@example.org" }]
-license = "Other/Proprietary License"
 requires-python = ">=3.7"
 description = "Python Namespace Package contains all you need to create a Python namespace package."
 keywords = ["foo.bar"]

@@ -19,7 +19,6 @@
       "command_line_interface": "No command-line interface",
       "version": "0.1.0",
       "create_author_file": "n",
-      "license": "Other/Proprietary License",
       "_copy_without_render": [
         ".github/workflows/pre-commit.yml"
       ],
